@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">FindANanny</string>
+    <string name="app_title">Find a nanny</string>
+    <string name="edition">student edition</string>
+    <string name="join_us">Join us! Sign in</string>
+    <string name="your_email">your e-mail</string>
+    <string name="your_password">password</string>
+    <string name="already_member">Already a member? Log in!</string>
+    <string name="join_button">Join us!</string>
+    <string name="hello_back">Hello back! Log in</string>
+    <string name="im_parent">I\'m a parent</string>
+    <string name="im_nanny">I\'m a nanny</string>
+    <string name="log_in_button">Log in!</string>
+    <string name="user_name">Name</string>
+    <string name="user_surname">Surname</string>
+    <string name="edit_profile">edit my profile</string>
+    <string name="find_nannies_button">Fing nannies in your area</string>
+    <string name="manage_appointments_button">Manage nannies\' appointments</string>
+    <string name="appointments_history_button">History of appointments</string>
+</resources>
