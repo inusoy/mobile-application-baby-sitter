@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-toolbar #j_7>
+        <ion-buttons #j_8 slot="start">
+            <ion-back-button #j_9>
+            </ion-back-button>
+            <ion-button #j_10 color="primary" expand="block" (click)="button4Click__j_10($event, currentItem)">
+                <ion-icon #j_10__icon name="add" slot="icon-only">
+                </ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-buttons #j_11 slot="end">
+            <ion-menu-button #j_12>
+            </ion-menu-button>
+        </ion-buttons>
+        <ion-title #j_13>
+            Job List
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-list #j_2>
+        <ion-item #j_3 class="userListItem" *ngFor="let user of userList">
+            <ion-label #j_4>
+                {{user.userName}}, {{user.description}}, {{user.address}}
+            </ion-label>
+            <ion-button #j_5 color="danger" expand="block" (click)="deleteUser(user._id)">
+                <ion-icon #j_5__icon name="remove" slot="icon-only">
+                </ion-icon>
+            </ion-button>
+        </ion-item>
+    </ion-list>
+</ion-content>

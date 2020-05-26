@@ -1,0 +1,112 @@
+.login-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .login-panel {
+        background-color: #ffffff;
+        border-radius: 8px;
+        width: 335px;
+        
+        .title-wrapper {
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            border-bottom: 2px solid #f4f4f4;
+            
+            .top-title {
+                font-size: 30px;
+                line-height: 38px;
+            }
+            
+            .bottom-title {
+                font-size: 18px;
+                line-height: 23px;
+                margin-top: 5px;
+            }
+        }
+        
+        .form-wrapper {
+            padding: 0 30px 30px 30px;
+            
+            ion-item {
+                margin-top: 10px;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 23px;
+                --padding-start: 0;
+                
+                ion-icon {
+                    font-size: 20px;
+                    height: 100%;
+                    margin: 13px 0 0 0;
+                }
+            }
+            
+            ion-text.error {
+                display: inline-block;
+                margin-top: 5px;
+                visibility: hidden;
+                
+                &.visible {
+                    visibility: visible;
+                }
+            }
+            
+            .keep-logged-in {
+                margin-top: 10px;
+                
+                ion-checkbox {
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+            
+            ion-button.ion-color-primary {
+                margin-top: 25px;
+                height: 54px;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 28px;
+            }
+            
+            .bottom-panel {
+                display: flex;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 18px;
+                margin-top: 25px;
+                
+                .sign-up {
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (min-height: 800px) {
+    .login-wrapper {
+        margin-top: 110px;
+    }
+}
+
+@media (max-height: 800px) {
+    .login-wrapper {
+        margin-top: 40px;
+    }
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.mainText {
+    font-size: 5em;
+    font-family: "Arial";
+    text-align: center;
+    font-weight: bold;
+}

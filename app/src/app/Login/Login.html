@@ -1,0 +1,64 @@
+<ion-content class="content" color="secondary">
+    <ion-grid #j_38>
+        <ion-row #j_39>
+            <ion-col #j_40 class="login-wrapper">
+                <div #j_41 class="login-panel">
+                    <div #j_42 class="title-wrapper">
+                        <ion-text color="primary" class="top-title mainText">
+                            Find a nanny
+                        </ion-text>
+                    </div>
+                    <div #j_44 class="form-wrapper">
+                        <form #loginForm="ngForm" #loginForm_el (ngSubmit)="loginformNgSubmit__j_45($event, currentItem)">
+                            <ion-item #j_46__ion4Item>
+                                <ion-label #j_46__ion4Label color="light" position="floating">
+                                    Email address
+                                </ion-label>
+                                <ion-icon #j_46__icon slot="end" color="light" class="input-icon" name="person">
+                                </ion-icon>
+                                <ion-input #username="ngModel" #username_el [ngModel] [ngModelOptions]="{updateOn: 'change'}"
+                                color="dark" maxlength="254" minlength="1" name="username" pattern="^(([^<>()\[\]\\.,;:\s@&#34;]+(\.[^<>()\[\]\\.,;:\s@&#34;]+)*)|(&#34;.+&#34;))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$"
+                                required="true" type="email">
+                                </ion-input>
+                            </ion-item>
+                            <ion-text color="danger" class="error" [ngClass]="{'visible': username.touched && username.errors}">
+                                Please enter a valid Email
+                            </ion-text>
+                            <ion-item #j_48__ion4Item>
+                                <ion-label #j_48__ion4Label color="light" position="floating">
+                                    Password
+                                </ion-label>
+                                <ion-icon #j_48__icon slot="end" color="light" class="eye" name="eye">
+                                </ion-icon>
+                                <ion-input #password="ngModel" #password_el [ngModel] [ngModelOptions]="{updateOn: 'change'}"
+                                color="dark" name="password" required="true" type="password" class="password">
+                                </ion-input>
+                            </ion-item>
+                            <ion-text color="danger" class="error" [ngClass]="{'visible': password.touched && password.errors && password.errors.required}">
+                                Please enter a Password
+                            </ion-text>
+                            <div #j_50 class="keep-logged-in">
+                                <ion-item #j_51__ion4Item lines="none" mode="ios">
+                                    <ion-label #j_51__ion4Label color="dark" mode="ios">
+                                        Keep me logged in
+                                    </ion-label>
+                                    <ion-checkbox #rememberme="ngModel" #rememberme_el [ngModel]="false" mode="ios"
+                                    name="rememberme" slot="start">
+                                    </ion-checkbox>
+                                </ion-item>
+                            </div>
+                            <ion-button #j_52 color="primary" expand="block" type="submit" (click)="signinbuttonClick__j_52($event, currentItem)">
+                                Sign in
+                            </ion-button>
+                        </form>
+                        <div #j_53 class="bottom-panel">
+                            <ion-text color="dark" class="sign-up" (click)="Apperyio.navigateTo('signup')">
+                                Sign up
+                            </ion-text>
+                        </div>
+                    </div>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

@@ -1,0 +1,27 @@
+
+ion-text[slot="fixed"], ion-note[slot="fixed"], ion-label[slot="fixed"] {
+	/* Fix Ionic 4 bug. Remove this when the bug will be fixed */
+	position: relative;
+}
+/*
+* Appery.io component.
+*/
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.img-circle {
+	border-radius: 50%;
+}
+.img-rounded {
+	border-radius: 6px;
+}
+ion-img[slot="fixed"], ion-thumbnail[slot="fixed"], ion-avatar[slot="fixed"] {
+	/* Fix Ionic 4 bug. Remove this when the bug will be fixed */
+	position: relative;
+}
+ion-icon[slot="fixed"] {
+	/* Fix Ionic 4 bug. Remove this when the bug will be fixed */
+	position: relative;
+}

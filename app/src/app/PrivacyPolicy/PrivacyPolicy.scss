@@ -1,0 +1,33 @@
+.policy-wrapper {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    
+    .policy-panel {
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        width: 335px;
+        
+        .title {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 23px;
+        }
+        
+        .description {
+            font-size: 14px;
+            line-height: 26px;
+            margin-top: 20px;
+            max-height: 60vh;
+            overflow-y: auto;
+        }
+        
+        ion-button {
+            margin-top: 25px;
+        }
+    }
+}

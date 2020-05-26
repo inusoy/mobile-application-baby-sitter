@@ -1,0 +1,129 @@
+.sign-up-wrapper {
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    
+    .sign-up-panel {
+        background-color: #ffffff;
+        border-radius: 8px;
+        width: 335px;
+        
+        .title-wrapper {
+            border-bottom: 2px solid #f4f4f4;
+            
+            .title {
+                font-size: 30px;
+                line-height: 38px;
+            }
+        }
+        
+        .form-wrapper {
+            
+            ion-item {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 23px;
+                --padding-start: 0;
+                
+                ion-icon {
+                    font-size: 20px;
+                    height: 100%;
+                    margin: 13px 0 0 0;
+                }
+            }
+            
+            ion-text.error {
+                display: inline-block;
+                margin-top: 5px;
+                visibility: hidden;
+                font-size: 13px;
+                
+                &.visible {
+                    visibility: visible;
+                }
+            }
+            
+            ion-button {
+                height: 54px;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 28px;
+            }
+        }
+    }
+}
+
+.bottom-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    .accept-policy {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+    }
+    
+    .have-account {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+    }
+}
+
+@media (min-height: 800px) {
+    .title-wrapper {
+        padding: 30px;
+    }
+    
+    .form-wrapper {
+        padding: 0 30px 30px 30px;
+        
+        ion-item {
+            margin-top: 5px;
+        }
+        
+        ion-button {
+            margin-top: 20px;
+        }
+    }
+    
+    .bottom-wrapper {
+        margin: 10px 25px 25px 25px;
+    }
+}
+
+@media (max-height: 800px) {
+    .title-wrapper {
+      padding: 20px 30px 15px 30px;
+    }
+    
+    .form-wrapper {
+        padding: 0 25px 25px 25px;
+        
+        ion-item {
+            --min-height: 40px;
+            margin-top: 0;
+            
+            ion-label {
+                margin-top: 5px;
+            }
+            
+            ion-input {
+                --padding-top: 0;
+            }
+        }
+        
+        ion-button {
+            margin-top: 10px;
+        }
+    }
+    
+    .bottom-wrapper {
+        margin: 10px 25px;
+    }
+}

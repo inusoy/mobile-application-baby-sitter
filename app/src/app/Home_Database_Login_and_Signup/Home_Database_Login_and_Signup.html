@@ -1,0 +1,43 @@
+<ion-header>
+    <ion-toolbar #j_98 color="secondary">
+        <ion-buttons #j_99 slot="start">
+            <ion-menu-button #j_100 autoHide="true">
+            </ion-menu-button>
+        </ion-buttons>
+        <ion-buttons #j_101 slot="end">
+            <ion-button #j_102 expand="block" (click)="logoutbuttonClick__j_102($event, currentItem)">
+                <ion-icon #j_102__icon name="log-out">
+                </ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title #j_103>
+            Home
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content class="main-content">
+    <ion-img #j_88 src="assets/images/cart.jpg" alt="Image error" class="center">
+    </ion-img>
+    <ion-text class="center mainText">
+        Find a
+        <br>
+        nanny
+    </ion-text>
+    <ion-text class="center lowerText">
+        student edition
+    </ion-text>
+    <ion-grid #j_91>
+        <ion-row #j_92>
+            <ion-col #j_93>
+                <ion-button #j_94 expand="block" shape="round" size="large" (click)="button3Click__j_94($event, currentItem)">
+                    Check for jobs
+                </ion-button>
+            </ion-col>
+            <ion-col #j_95>
+                <ion-button #j_96 expand="block" shape="round" size="large" (click)="button4Click__j_96($event, currentItem)">
+                    Add job offer
+                </ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

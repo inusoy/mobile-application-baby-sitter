@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-toolbar #j_22>
+        <ion-buttons #j_23 slot="start">
+            <ion-back-button #j_24>
+            </ion-back-button>
+        </ion-buttons>
+        <ion-title #j_25>
+            Add a Job
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-item #j_17__ion4Item>
+        <ion-label #j_17__ion4Label>
+            E-mail:
+        </ion-label>
+        <ion-input #j_17 [(ngModel)]="newJobName" name="Input1" placeholder="Enter contact e-mail">
+        </ion-input>
+    </ion-item>
+    <ion-item #j_18__ion4Item>
+        <ion-label #j_18__ion4Label>
+            Address:
+        </ion-label>
+        <ion-input #j_18 [(ngModel)]="newJobAddress" name="Input1" placeholder="Enter address">
+        </ion-input>
+    </ion-item>
+    <ion-item #j_19__ion4Item>
+        <ion-label #j_19__ion4Label>
+            Description:
+        </ion-label>
+        <ion-input #j_19 [(ngModel)]="newJobDescription" name="Input1" placeholder="Enter job description">
+        </ion-input>
+    </ion-item>
+    <ion-button #j_20 expand="block" (click)="button3Click__j_20($event, currentItem)">
+        Add
+    </ion-button>
+</ion-content>
